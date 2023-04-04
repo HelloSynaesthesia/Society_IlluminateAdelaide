@@ -183,8 +183,8 @@ void ofApp::leapGestureEvent(GestureEventArgs& args)
 
     if ((args.state == Leap::Gesture::STATE_START) || (args.state == Leap::Gesture::STATE_UPDATE)) {
 
-        if (args.type == GestureType::SWIPE_RIGHT) {
-            ofLogNotice() << "Swipe Right";
+        if (args.type == GestureType::SWIPE_LEFT) {
+            ofLogNotice() << "Swipe Left";
 //            tween_x.setParameters(1, easingexpo, ofxTween::easeOut, xt, xt + move, duration, 0);
 //            currentTime = ofGetElapsedTimeMillis();
 
@@ -195,8 +195,8 @@ void ofApp::leapGestureEvent(GestureEventArgs& args)
             }
             currentTime = ofGetElapsedTimeMillis();
         }
-        if (args.type == GestureType::SWIPE_LEFT) {
-            ofLogNotice() << "Swipe Left";
+        if (args.type == GestureType::SWIPE_RIGHT) {
+            ofLogNotice() << "Swipe Right";
 //            tween_x.setParameters(2, easingexpo, ofxTween::easeOut, xt, xt - move, duration, 0);
 //            currentTime = ofGetElapsedTimeMillis();
 
